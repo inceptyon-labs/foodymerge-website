@@ -29,6 +29,7 @@ Or use `npx serve .` if you prefer Node.
 ```
 .
 ├── index.html      single-page marketing site
+├── app-ads.txt     AdMob authorized seller declaration
 ├── styles.css      design tokens + all layout
 ├── main.js         merge-loop demo auto-cycle (no deps)
 ├── PRODUCT.md      brand context (register, voice, anti-references)

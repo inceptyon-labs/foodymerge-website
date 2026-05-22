@@ -70,11 +70,10 @@
           <p>
             <strong>The short version.</strong> FoodyMerge is a single-player offline
             game. We don't make you sign in, we don't have a server, we don't sell
-            anything you do in the game. Four external services touch the game
-            &mdash; Apple/Google for purchases, Google AdMob for the optional ads
-            you choose to watch, Firebase Crashlytics for crash reports, RevenueCat
-            to keep your purchases in sync across devices. Each one is explained
-            below.
+            anything you do in the game. Three external services may touch the
+            game &mdash; Apple/Google for purchases, Google AdMob for optional
+            rewarded ads you choose to watch, and Firebase Crashlytics for crash
+            reports. Each one is explained below.
           </p>
 
           <h2>1. Who we are</h2>
@@ -109,22 +108,17 @@
               <tr>
                 <td>Apple App Store / Google Play</td>
                 <td>Purchase receipts when you buy a coin pack.</td>
-                <td>Required to grant what you bought. We never see your payment method.</td>
+                <td>Required to grant or restore what you bought. We never see your payment method.</td>
               </tr>
               <tr>
                 <td>Google AdMob</td>
-                <td>If you opt in to a rewarded ad: ad ID, IP, ad interactions.</td>
-                <td>To show the ad and confirm you saw it.</td>
+                <td>If you opt in to a rewarded ad: IP address, ad/video interactions, diagnostics, and device or advertising identifiers where available.</td>
+                <td>To show a non-personalized rewarded ad, prevent fraud, and confirm you earned the reward.</td>
               </tr>
               <tr>
                 <td>Firebase Crashlytics</td>
                 <td>If the game crashes: stack trace, device model, OS version, anonymous installation ID.</td>
                 <td>To find and fix the bug.</td>
-              </tr>
-              <tr>
-                <td>RevenueCat</td>
-                <td>An anonymous user ID + your purchase history.</td>
-                <td>To keep your purchases working if you reinstall or move to a new device.</td>
               </tr>
             </tbody>
           </table>
@@ -153,18 +147,10 @@
             other financial information.</strong>
           </p>
           <p>
-            To keep your purchases working across devices &mdash; so if you
-            reinstall the app or move from iPhone to iPad, your purchases come back
-            &mdash; we use <strong>RevenueCat</strong> as a thin layer that records
-            what you bought. RevenueCat receives:
-          </p>
-          <ul>
-            <li>An anonymous identifier we generate for your device</li>
-            <li>The purchase receipt from Apple/Google</li>
-          </ul>
-          <p>
-            RevenueCat's privacy policy:
-            <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a>
+            FoodyMerge stores a local purchase record after a purchase is granted
+            so duplicate receipts are not granted twice. Restore Purchases uses
+            Apple and Google store APIs; there is no separate purchase-sync
+            provider.
           </p>
 
           <h3>3.3 Opt-in rewarded ads</h3>
@@ -176,28 +162,37 @@
           </p>
           <p>
             If you tap &ldquo;Watch ad,&rdquo; the ad is served by
-            <strong>Google AdMob</strong>. AdMob receives:
+            <strong>Google AdMob</strong>. FoodyMerge requests non-personalized
+            ads only, marks ad requests as child-directed and under the age of
+            consent, and sets the maximum ad content rating to G. AdMob may
+            receive:
           </p>
           <ul>
-            <li>Your device's advertising identifier (IDFA on iOS, AAID on Android &mdash; both resettable in your device settings)</li>
-            <li>Your approximate IP-based location</li>
-            <li>Ad interaction events (impression, click, completion)</li>
+            <li>Your IP address, which can be used to estimate general location</li>
+            <li>Ad and video interaction events, such as impression, click, and completion</li>
+            <li>Diagnostic information about the app and the ad SDK</li>
+            <li>Device or advertising identifiers where available, such as the Android advertising ID</li>
           </ul>
           <p>
-            Google uses this information to choose which ad to show and to confirm
-            you saw it. We receive only a confirmation that the ad played so we can
-            grant your reward.
+            Google uses this information to show the ad, measure performance,
+            prevent fraud, and confirm that you earned the reward. We receive only
+            a confirmation that the ad played so we can grant the in-game bonus.
+            FoodyMerge does not request Apple's App Tracking Transparency
+            permission and does not use AdMob for cross-app behavioral targeting.
           </p>
           <p>
-            Google AdMob privacy policy:
-            <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>
+            Google AdMob privacy information:
+            <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>
+            and
+            <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses data from partner apps</a>.
           </p>
           <p>
-            <strong>You can stop personalized ads at any time</strong> by going to:
+            You can reset or delete advertising identifiers in your device
+            settings:
           </p>
           <ul>
-            <li>iOS: Settings &rarr; Privacy &amp; Security &rarr; Apple Advertising &rarr; toggle off &ldquo;Personalized Ads&rdquo;</li>
-            <li>Android: Settings &rarr; Privacy &rarr; Ads &rarr; toggle on &ldquo;Opt out of Ads Personalization&rdquo;</li>
+            <li>iOS: Settings &rarr; Privacy &amp; Security &rarr; Tracking / Apple Advertising</li>
+            <li>Android: Settings &rarr; Privacy &rarr; Ads</li>
           </ul>
           <p>
             If you never tap &ldquo;Watch ad,&rdquo; AdMob does not receive any
@@ -238,8 +233,9 @@
             <li>
               Rewarded ads are opt-in. If you'd like to disable them entirely for
               a child, simply don't tap &ldquo;Watch ad&rdquo; &mdash; there is no
-              way for the game to show one without that explicit tap. We are
-              looking into a parental settings switch for an upcoming release.
+              way for the game to show one without that explicit tap. When an ad
+              is requested, FoodyMerge asks AdMob for a non-personalized,
+              child-directed, G-rated ad.
             </li>
             <li>
               In-app purchases on iOS &ldquo;Ask to Buy&rdquo; and Google Play
@@ -249,8 +245,8 @@
           </ul>
           <p>
             If you are a parent or guardian and believe your child has triggered
-            data collection by AdMob, Crashlytics, or RevenueCat and you'd like
-            that data deleted, email
+            data collection by AdMob or Crashlytics and you'd like that data
+            deleted, email
             <a href="mailto:privacy@foodymerge.com">privacy@foodymerge.com</a> and
             we will initiate deletion requests on your behalf.
           </p>
@@ -268,8 +264,8 @@
               <strong>Access</strong> your data. Since we don't store anything
               personally identifying about you ourselves, there's typically nothing
               for us to retrieve &mdash; but if you have outstanding AdMob,
-              Crashlytics, or RevenueCat records, email us and we will initiate
-              access requests on your behalf.
+              Crashlytics, or store-purchase records, email us and we will
+              initiate access requests on your behalf.
             </li>
             <li>
               <strong>Delete</strong> your data. Uninstalling the app removes all
@@ -296,8 +292,8 @@
           <ul>
             <li><strong>Save data:</strong> lives on your device until you delete the app.</li>
             <li><strong>Crash reports:</strong> retained by Firebase Crashlytics for 90 days, then deleted.</li>
-            <li><strong>AdMob events:</strong> retained per Google's standard ad data retention policy (currently 13 months for personalization signals).</li>
-            <li><strong>RevenueCat purchase records:</strong> retained as long as the purchase is valid, or up to 7 years for tax and audit purposes.</li>
+            <li><strong>AdMob events:</strong> retained per Google's standard ad data retention policies.</li>
+            <li><strong>Purchase receipts:</strong> retained by Apple or Google under their store policies. FoodyMerge keeps local purchase grant records while the app is installed.</li>
           </ul>
 
           <h2>7. Security</h2>
