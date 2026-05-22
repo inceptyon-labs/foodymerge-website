@@ -51,7 +51,10 @@ If you've played Travel Town, Merge Mansion, Stardew Valley, or Animal Crossing,
 
 ## Pages
 
-- [Home](https://foodymerge.com/) — single-page marketing site
+- [Home](https://foodymerge.com/) — marketing site (game overview, cast, chains, FAQ)
+- [Privacy Policy](https://foodymerge.com/privacy/) — what data we collect and why (short version: very little)
+- [Terms of Service](https://foodymerge.com/terms/) — license, IAP terms, conduct, governing law
+- [Support](https://foodymerge.com/support/) — common issues, refund process, parent guidance
 
 ## Contact
 
