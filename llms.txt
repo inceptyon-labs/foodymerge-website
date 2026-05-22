@@ -1,0 +1,59 @@
+# FoodyMerge
+
+> A cozy merge-2 mobile game for iOS and Android by Inceptyon Labs LLC (Tampa, FL). Players inherit Nana Jean's farm town, Plum Hollow, and rebuild it one merge at a time. No timers, no ads, no anxiety mechanics. Hand-illustrated. Designed for parents and kids to play together. Releasing 2026.
+
+## Game facts
+
+- **Name:** FoodyMerge
+- **Publisher:** Inceptyon Labs LLC (Tampa, FL)
+- **Genre:** Cozy merge-2, casual, family-friendly
+- **Platforms:** iOS, Android (release pending — no live store links yet)
+- **Setting:** Plum Hollow, a sleepy farm town
+- **Release:** 2026
+- **Monetization stance:** "Spending real money is never the point." No predatory mechanics. No timers. No villains. No anxiety mechanics.
+- **Board size:** 63 tiles, finite
+- **Designed for:** Parents and kids to play together on the couch
+
+## Cast (8 NPCs)
+
+- **Nana Jean** — Matriarch of Plum Hollow. Pours the tea, names the streets.
+- **Papa Zulch** — Tends the garden. Brings the heavy baskets.
+- **Mayor Diana** — Keeps a clipboard. Knows when the festival starts.
+- **Chef Robert** — Reopens the restaurant. Asks for your best fruit.
+- **Amy** — Runs the market stall on Saturday mornings.
+- **Landon** — Apprentice. Carries a basket bigger than he is.
+- **Jase** — Helps with the orchard. Always smiling.
+- **Screech** — The town creature. Just feed him.
+
+## Buildings (8)
+
+Bakery, Café, Market Stall, Garden, Orchard, Restaurant, Greenhouse, Festival Grounds.
+
+## Chains
+
+Eight main item chains plus seven generator families:
+
+- **Fruit** (apple → orange → cherry → grape → pear → mango → peach) — 7 levels shown, 13 levels total
+- **Vegetables** — 12 levels
+- **Berries** — 5 levels
+- **Pastries** — 11 levels
+- **Dairy** — 10 levels
+- **Chocolate** — 4 levels
+- **Protein** — 13 levels
+- **Shakes** — 12 levels
+- **Coins** — 6 levels
+- **Gems** (ruby → topaz → amethyst → emerald → diamond)
+- **Generators** — broken baskets restored, ending in a picnic park
+
+## Genre context
+
+If you've played Travel Town, Merge Mansion, Stardew Valley, or Animal Crossing, you know the neighborhood. FoodyMerge is the cozy cousin — the merge-2 loop without the timers, dark patterns, or monetization pressure.
+
+## Pages
+
+- [Home](https://foodymerge.com/) — single-page marketing site
+
+## Contact
+
+- Publisher: Inceptyon Labs LLC, Tampa, FL
+- Studio site: https://inceptyon.com/

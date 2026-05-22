@@ -7,15 +7,42 @@
     <title>FoodyMerge · A cozy farm-town merge game</title>
     <meta
       name="description"
-      content="Inherit Nana Jean's sleepy farm town, Plum Hollow, and rebuild it one merge at a time. A cozy hand-illustrated merge-2 game for iOS and Android. No timers chasing you."
+      content="A cozy merge-2 mobile game for iOS and Android from Inceptyon Labs. Inherit Nana Jean's sleepy farm town, Plum Hollow, and rebuild it one merge at a time. No timers, no ads. Coming 2026."
     />
+    <meta name="author" content="Inceptyon Labs LLC" />
+    <link rel="canonical" href="https://foodymerge.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://foodymerge.com/" />
+    <meta property="og:site_name" content="FoodyMerge" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="FoodyMerge · A cozy farm-town merge game" />
     <meta
       property="og:description"
-      content="Inherit Nana Jean's sleepy farm town and rebuild it one merge at a time."
+      content="A cozy merge-2 mobile game for iOS and Android. Inherit Nana Jean's sleepy farm town and rebuild it one merge at a time. Coming 2026."
     />
-    <meta property="og:image" content="assets/ui/app_icon.png" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://foodymerge.com/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The FoodyMerge wordmark on a sun-warmed cream background, with Nana Jean and painted fruit illustrations"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FoodyMerge · A cozy farm-town merge game" />
+    <meta
+      name="twitter:description"
+      content="A cozy merge-2 mobile game for iOS and Android. Inherit Nana Jean's sleepy farm town and rebuild it one merge at a time. Coming 2026."
+    />
+    <meta name="twitter:image" content="https://foodymerge.com/assets/og.png" />
+    <meta
+      name="twitter:image:alt"
+      content="The FoodyMerge wordmark on a sun-warmed cream background, with Nana Jean and painted fruit illustrations"
+    />
+
     <link rel="icon" href="assets/ui/app_icon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/ui/app_icon.png" />
 
@@ -26,6 +53,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured data: VideoGame + Organization + WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "VideoGame",
+            "@id": "https://foodymerge.com/#game",
+            "name": "FoodyMerge",
+            "alternateName": "Foody Merge",
+            "url": "https://foodymerge.com/",
+            "image": "https://foodymerge.com/assets/ui/app_icon.png",
+            "description": "A cozy merge-2 mobile game. Inherit Nana Jean's sleepy farm town, Plum Hollow, and rebuild it one merge at a time. No timers, no villains, no anxiety mechanics.",
+            "genre": ["Cozy game", "Merge", "Casual", "Family"],
+            "gamePlatform": ["iOS", "Android"],
+            "applicationCategory": "GameApplication",
+            "operatingSystem": ["iOS", "Android"],
+            "contentRating": "Everyone",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://foodymerge.com/#publisher" },
+            "author": { "@id": "https://foodymerge.com/#publisher" },
+            "datePublished": "2026",
+            "releaseNotes": "Coming soon to App Store and Google Play."
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://foodymerge.com/#publisher",
+            "name": "Inceptyon Labs LLC",
+            "url": "https://inceptyon.com/",
+            "logo": "https://foodymerge.com/assets/ui/app_icon.png",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Tampa",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://foodymerge.com/#site",
+            "url": "https://foodymerge.com/",
+            "name": "FoodyMerge",
+            "publisher": { "@id": "https://foodymerge.com/#publisher" },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -33,7 +109,7 @@
 
     <header class="topbar" aria-label="Site header">
       <a class="lockup" href="#top" aria-label="FoodyMerge home">
-        <img
+        <img decoding="async" loading="lazy"
           src="assets/ui/app_icon.png"
           alt=""
           aria-hidden="true"
@@ -62,6 +138,9 @@
             <h1 id="hero-title" class="hero__title">
               <span class="hero__title-foody">Foody</span><wbr /><span class="hero__title-merge">Merge</span>
             </h1>
+            <p class="hero__subtitle">
+              A cozy merge-2 mobile game for iOS and Android · Coming 2026
+            </p>
             <p class="hero__tagline">
               Inherit Nana Jean's sleepy farm town, <em>Plum&nbsp;Hollow</em>, and bring
               it back to life one merge at a time. No timers chasing you. No villains.
@@ -112,7 +191,7 @@
           <figure class="hero__art" aria-labelledby="hero-art-cap">
             <div class="hero__art-stage">
               <span class="hero__floor" aria-hidden="true"></span>
-              <img
+              <img decoding="async"
                 class="hero__nana"
                 src="assets/npcs/nana_jean.png"
                 alt="Nana Jean, the matriarch of Plum Hollow, holding a teacup in a sage cardigan"
@@ -121,7 +200,7 @@
                 loading="eager"
                 fetchpriority="high"
               />
-              <img
+              <img decoding="async"
                 class="hero__prop hero__prop--basket"
                 src="assets/items/large_fruit_basket.png"
                 alt=""
@@ -130,7 +209,7 @@
                 height="200"
                 loading="eager"
               />
-              <img
+              <img decoding="async"
                 class="hero__prop hero__prop--screech"
                 src="assets/npcs/screech.png"
                 alt=""
@@ -164,7 +243,7 @@
         <ol class="pillars">
           <li class="pillar pillar--time">
             <div class="pillar__sigil">
-              <img src="assets/ui/icon_schedule.png" alt="" aria-hidden="true" width="64" height="64" />
+              <img decoding="async" loading="lazy" src="assets/ui/icon_schedule.png" alt="" aria-hidden="true" width="64" height="64" />
             </div>
             <div class="pillar__body">
               <h3 class="pillar__head">No timers chasing you</h3>
@@ -178,8 +257,8 @@
 
           <li class="pillar pillar--money">
             <div class="pillar__sigil">
-              <img src="assets/items/gold_coin.png" alt="" aria-hidden="true" width="64" height="64" />
-              <img class="pillar__sigil-back" src="assets/items/ruby.png" alt="" aria-hidden="true" width="48" height="48" />
+              <img decoding="async" loading="lazy" src="assets/items/gold_coin.png" alt="" aria-hidden="true" width="64" height="64" />
+              <img decoding="async" loading="lazy" class="pillar__sigil-back" src="assets/items/ruby.png" alt="" aria-hidden="true" width="48" height="48" />
             </div>
             <div class="pillar__body">
               <h3 class="pillar__head">Generous, but bounded</h3>
@@ -193,8 +272,8 @@
 
           <li class="pillar pillar--together">
             <div class="pillar__sigil pillar__sigil--stack">
-              <img class="pillar__sigil-portrait" src="assets/npcs/landon.png" alt="" aria-hidden="true" width="64" height="96" />
-              <img class="pillar__sigil-portrait pillar__sigil-portrait--back" src="assets/npcs/nana_jean.png" alt="" aria-hidden="true" width="64" height="96" />
+              <img decoding="async" loading="lazy" class="pillar__sigil-portrait" src="assets/npcs/landon.png" alt="" aria-hidden="true" width="64" height="96" />
+              <img decoding="async" loading="lazy" class="pillar__sigil-portrait pillar__sigil-portrait--back" src="assets/npcs/nana_jean.png" alt="" aria-hidden="true" width="64" height="96" />
             </div>
             <div class="pillar__body">
               <h3 class="pillar__head">Bring it home together</h3>
@@ -225,7 +304,7 @@
 
           <figure class="play__shot" aria-labelledby="play-shot-cap">
             <div class="play__shot-frame">
-              <img
+              <img decoding="async"
                 src="assets/screenshots/board_day_31.png"
                 alt="The FoodyMerge board on day 31. A 7-column grid half full of items: apple and pear trees, fruit baskets, a quest from Jase to build a Medium Oven, 97,377 coins and 1,126 gems in the wallet, a strawberry and a dragon fruit in the lower rows, three empty dashed tiles."
                 width="540"
@@ -245,12 +324,12 @@
               <div class="loop__label">1. Tap a generator</div>
               <div class="loop__stage loop__stage--tap">
                 <div class="loop__tile loop__tile--gen">
-                  <img src="assets/items/fruit_basket.png" alt="A wicker fruit basket" width="128" height="128" />
+                  <img decoding="async" loading="lazy" src="assets/items/fruit_basket.png" alt="A wicker fruit basket" width="128" height="128" />
                   <span class="loop__pulse" aria-hidden="true"></span>
                   <span class="loop__tap-mark" aria-hidden="true"></span>
                 </div>
                 <div class="loop__tile loop__tile--drop">
-                  <img src="assets/items/apple.png" alt="A red apple" width="96" height="96" />
+                  <img decoding="async" loading="lazy" src="assets/items/apple.png" alt="A red apple" width="96" height="96" />
                 </div>
               </div>
             </li>
@@ -259,11 +338,11 @@
               <div class="loop__label">2. Drag to merge</div>
               <div class="loop__stage loop__stage--merge">
                 <div class="loop__tile loop__tile--source">
-                  <img src="assets/items/apple.png" alt="" aria-hidden="true" class="loop__merge-source" />
+                  <img height="96" width="96" decoding="async" loading="lazy" src="assets/items/apple.png" alt="" aria-hidden="true" class="loop__merge-source" />
                 </div>
                 <div class="loop__tile loop__tile--target">
-                  <img src="assets/items/apple.png" alt="" aria-hidden="true" class="loop__merge-target-apple" />
-                  <img src="assets/items/orange.png" alt="An orange" class="loop__merge-target-orange" />
+                  <img height="96" width="96" decoding="async" loading="lazy" src="assets/items/apple.png" alt="" aria-hidden="true" class="loop__merge-target-apple" />
+                  <img height="96" width="96" decoding="async" loading="lazy" src="assets/items/orange.png" alt="An orange" class="loop__merge-target-orange" />
                   <span class="loop__sparkle" aria-hidden="true"></span>
                 </div>
               </div>
@@ -272,11 +351,11 @@
             <li class="loop__step" data-step="2">
               <div class="loop__label">3. Climb the chain</div>
               <div class="loop__stage loop__stage--chain">
-                <img src="assets/items/orange.png" alt="" aria-hidden="true" class="loop__chain-item loop__chain-item--sm" />
+                <img height="96" width="96" decoding="async" loading="lazy" src="assets/items/orange.png" alt="" aria-hidden="true" class="loop__chain-item loop__chain-item--sm" />
                 <span aria-hidden="true">→</span>
-                <img src="assets/items/grape.png" alt="" aria-hidden="true" class="loop__chain-item loop__chain-item--md" />
+                <img height="96" width="96" decoding="async" loading="lazy" src="assets/items/grape.png" alt="" aria-hidden="true" class="loop__chain-item loop__chain-item--md" />
                 <span aria-hidden="true">→</span>
-                <img src="assets/items/peach.png" alt="" aria-hidden="true" class="loop__chain-item loop__chain-item--lg" />
+                <img height="96" width="96" decoding="async" loading="lazy" src="assets/items/peach.png" alt="" aria-hidden="true" class="loop__chain-item loop__chain-item--lg" />
               </div>
             </li>
 
@@ -284,13 +363,13 @@
               <div class="loop__label">4. Fulfill the order</div>
               <div class="loop__stage loop__stage--deliver">
                 <div class="loop__bubble">
-                  <img src="assets/items/large_fruit_basket.png" alt="" aria-hidden="true" width="32" height="32" />
+                  <img decoding="async" loading="lazy" src="assets/items/large_fruit_basket.png" alt="" aria-hidden="true" width="32" height="32" />
                   <span>Delivered</span>
                 </div>
-                <img class="loop__deliver-item" src="assets/items/large_fruit_basket.png" alt="" aria-hidden="true" width="92" height="92" />
-                <img class="loop__deliver-target" src="assets/npcs/chef_robert.png" alt="Chef Robert holding a wooden spoon" width="120" height="180" />
+                <img decoding="async" loading="lazy" class="loop__deliver-item" src="assets/items/large_fruit_basket.png" alt="" aria-hidden="true" width="92" height="92" />
+                <img decoding="async" loading="lazy" class="loop__deliver-target" src="assets/npcs/chef_robert.png" alt="Chef Robert holding a wooden spoon" width="120" height="180" />
                 <div class="loop__reward" aria-hidden="true">
-                  <img src="assets/items/gold_coin.png" alt="" width="28" height="28" />
+                  <img decoding="async" loading="lazy" src="assets/items/gold_coin.png" alt="" width="28" height="28" />
                   <span>+ 240</span>
                 </div>
               </div>
@@ -327,56 +406,56 @@
 
         <ul class="town__map" aria-label="Buildings of Plum Hollow">
           <li class="town__plot" data-plot="bakery">
-            <img src="assets/buildings/bakery.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/bakery.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Bakery</h3>
               <p>Marco's bread is back in the window.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="cafe">
-            <img src="assets/buildings/cafe.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/cafe.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Café</h3>
               <p>Two tables, three chairs, one hanging fern.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="market">
-            <img src="assets/buildings/market_stall.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/market_stall.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Market Stall</h3>
               <p>Red awning. Crates of whatever you grew today.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="garden">
-            <img src="assets/buildings/garden.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/garden.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Garden</h3>
               <p>Raised beds, a wooden fence, afternoon light.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="orchard">
-            <img src="assets/buildings/orchard.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/orchard.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Orchard</h3>
               <p>Three trees, a picking ladder, a basket.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="restaurant">
-            <img src="assets/buildings/restaurant.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/restaurant.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Restaurant</h3>
               <p>Warm windows, flower boxes, a wooden sign.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="greenhouse">
-            <img src="assets/buildings/greenhouse.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/greenhouse.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Greenhouse</h3>
               <p>Glass panes fogged from the inside.</p>
             </div>
           </li>
           <li class="town__plot" data-plot="festival">
-            <img src="assets/buildings/festival_grounds.png" alt="" aria-hidden="true" width="180" height="180" />
+            <img decoding="async" loading="lazy" src="assets/buildings/festival_grounds.png" alt="" aria-hidden="true" width="180" height="180" />
             <div class="town__plot-label">
               <h3>The Festival Grounds</h3>
               <p>Bunting flags, a small stage, paper lanterns.</p>
@@ -387,42 +466,42 @@
         <h3 class="town__cast-title">…and the neighbors who live here</h3>
         <ul class="cast" aria-label="The townsfolk">
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/nana_jean.png" alt="Nana Jean in a sage cardigan, holding a teacup" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/nana_jean.png" alt="Nana Jean in a sage cardigan, holding a teacup" width="140" height="200" /></div>
             <h4>Nana Jean</h4>
             <p>The matriarch. Pours the tea, names the streets.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/papa_zulch.png" alt="Papa Zulch in overalls and a straw hat, holding a vegetable basket" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/papa_zulch.png" alt="Papa Zulch in overalls and a straw hat, holding a vegetable basket" width="140" height="200" /></div>
             <h4>Papa Zulch</h4>
             <p>Tends the garden. Brings the heavy baskets.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/mayor_diana.png" alt="Mayor Diana in a plum vest and tan trousers, holding a clipboard" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/mayor_diana.png" alt="Mayor Diana in a plum vest and tan trousers, holding a clipboard" width="140" height="200" /></div>
             <h4>Mayor Diana</h4>
             <p>Keeps a clipboard. Knows when the festival starts.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/chef_robert.png" alt="Chef Robert in chef's whites and a red kerchief, holding a wooden spoon" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/chef_robert.png" alt="Chef Robert in chef's whites and a red kerchief, holding a wooden spoon" width="140" height="200" /></div>
             <h4>Chef Robert</h4>
             <p>Reopens the restaurant. Asks for your best fruit.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/amy.png" alt="Amy, a cheerful young townsperson" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/amy.png" alt="Amy, a cheerful young townsperson" width="140" height="200" /></div>
             <h4>Amy</h4>
             <p>Runs the market stall on Saturday mornings.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/landon.png" alt="Landon, a young boy in an apron holding a fruit basket" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/landon.png" alt="Landon, a young boy in an apron holding a fruit basket" width="140" height="200" /></div>
             <h4>Landon</h4>
             <p>Apprentice. Carries a basket bigger than he is.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/jase.png" alt="Jase, a friendly young farmhand" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/jase.png" alt="Jase, a friendly young farmhand" width="140" height="200" /></div>
             <h4>Jase</h4>
             <p>Helps with the orchard. Always smiling.</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img src="assets/npcs/screech.png" alt="Screech, the town animal" width="140" height="200" /></div>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="assets/npcs/screech.png" alt="Screech, the town animal" width="140" height="200" /></div>
             <h4>Screech</h4>
             <p>The town creature. Don't ask, just feed him.</p>
           </li>
@@ -449,37 +528,37 @@
           </header>
           <ol class="chain__rung">
             <li>
-              <div class="chain__tile chain__tile--xs"><img src="assets/items/apple.png" alt="Apple" width="56" height="56" /></div>
+              <div class="chain__tile chain__tile--xs"><img decoding="async" loading="lazy" src="assets/items/apple.png" alt="Apple" width="56" height="56" /></div>
               <span class="chain__level">L1</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--sm"><img src="assets/items/orange.png" alt="Orange" width="64" height="64" /></div>
+              <div class="chain__tile chain__tile--sm"><img decoding="async" loading="lazy" src="assets/items/orange.png" alt="Orange" width="64" height="64" /></div>
               <span class="chain__level">L2</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--md"><img src="assets/items/cherry.png" alt="Cherries" width="80" height="80" /></div>
+              <div class="chain__tile chain__tile--md"><img decoding="async" loading="lazy" src="assets/items/cherry.png" alt="Cherries" width="80" height="80" /></div>
               <span class="chain__level">L3</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--md"><img src="assets/items/grape.png" alt="Grapes" width="80" height="80" /></div>
+              <div class="chain__tile chain__tile--md"><img decoding="async" loading="lazy" src="assets/items/grape.png" alt="Grapes" width="80" height="80" /></div>
               <span class="chain__level">L4</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg"><img src="assets/items/pear.png" alt="Pear" width="96" height="96" /></div>
+              <div class="chain__tile chain__tile--lg"><img decoding="async" loading="lazy" src="assets/items/pear.png" alt="Pear" width="96" height="96" /></div>
               <span class="chain__level">L5</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg"><img src="assets/items/mango.png" alt="Mango" width="96" height="96" /></div>
+              <div class="chain__tile chain__tile--lg"><img decoding="async" loading="lazy" src="assets/items/mango.png" alt="Mango" width="96" height="96" /></div>
               <span class="chain__level">L6</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg chain__tile--peak"><img src="assets/items/peach.png" alt="Peach" width="104" height="104" /></div>
+              <div class="chain__tile chain__tile--lg chain__tile--peak"><img decoding="async" loading="lazy" src="assets/items/peach.png" alt="Peach" width="104" height="104" /></div>
               <span class="chain__level">L7</span>
             </li>
           </ol>
@@ -492,37 +571,37 @@
           </header>
           <ol class="chain__rung">
             <li>
-              <div class="chain__tile chain__tile--sm"><img src="assets/items/large_fruitless_basket.png" alt="Empty wicker basket" width="72" height="72" /></div>
+              <div class="chain__tile chain__tile--sm"><img decoding="async" loading="lazy" src="assets/items/large_fruitless_basket.png" alt="Empty wicker basket" width="72" height="72" /></div>
               <span class="chain__level">L3</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--md"><img src="assets/items/fruit_basket.png" alt="Fruit basket with apple and orange" width="88" height="88" /></div>
+              <div class="chain__tile chain__tile--md"><img decoding="async" loading="lazy" src="assets/items/fruit_basket.png" alt="Fruit basket with apple and orange" width="88" height="88" /></div>
               <span class="chain__level">L4</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--md"><img src="assets/items/large_fruit_basket.png" alt="Large overflowing fruit basket" width="96" height="96" /></div>
+              <div class="chain__tile chain__tile--md"><img decoding="async" loading="lazy" src="assets/items/large_fruit_basket.png" alt="Large overflowing fruit basket" width="96" height="96" /></div>
               <span class="chain__level">L5</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg"><img src="assets/items/small_picnic.png" alt="Small picnic" width="104" height="104" /></div>
+              <div class="chain__tile chain__tile--lg"><img decoding="async" loading="lazy" src="assets/items/small_picnic.png" alt="Small picnic" width="104" height="104" /></div>
               <span class="chain__level">L6</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg"><img src="assets/items/medium_picnic.png" alt="Medium picnic" width="112" height="112" /></div>
+              <div class="chain__tile chain__tile--lg"><img decoding="async" loading="lazy" src="assets/items/medium_picnic.png" alt="Medium picnic" width="112" height="112" /></div>
               <span class="chain__level">L7</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg"><img src="assets/items/large_picnic.png" alt="Large picnic" width="120" height="120" /></div>
+              <div class="chain__tile chain__tile--lg"><img decoding="async" loading="lazy" src="assets/items/large_picnic.png" alt="Large picnic" width="120" height="120" /></div>
               <span class="chain__level">L8</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg chain__tile--peak"><img src="assets/items/picnic_park.png" alt="Picnic park" width="128" height="128" /></div>
+              <div class="chain__tile chain__tile--lg chain__tile--peak"><img decoding="async" loading="lazy" src="assets/items/picnic_park.png" alt="Picnic park" width="128" height="128" /></div>
               <span class="chain__level">L9</span>
             </li>
           </ol>
@@ -535,27 +614,27 @@
           </header>
           <ol class="chain__rung">
             <li>
-              <div class="chain__tile chain__tile--sm"><img src="assets/items/ruby.png" alt="Ruby" width="72" height="72" /></div>
+              <div class="chain__tile chain__tile--sm"><img decoding="async" loading="lazy" src="assets/items/ruby.png" alt="Ruby" width="72" height="72" /></div>
               <span class="chain__level">L1</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--md"><img src="assets/items/topaz.png" alt="Topaz" width="80" height="80" /></div>
+              <div class="chain__tile chain__tile--md"><img decoding="async" loading="lazy" src="assets/items/topaz.png" alt="Topaz" width="80" height="80" /></div>
               <span class="chain__level">L2</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--md"><img src="assets/items/amethyst.png" alt="Amethyst" width="88" height="88" /></div>
+              <div class="chain__tile chain__tile--md"><img decoding="async" loading="lazy" src="assets/items/amethyst.png" alt="Amethyst" width="88" height="88" /></div>
               <span class="chain__level">L3</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg"><img src="assets/items/emerald.png" alt="Emerald" width="96" height="96" /></div>
+              <div class="chain__tile chain__tile--lg"><img decoding="async" loading="lazy" src="assets/items/emerald.png" alt="Emerald" width="96" height="96" /></div>
               <span class="chain__level">L4</span>
             </li>
             <li class="chain__arrow" aria-hidden="true">×2</li>
             <li>
-              <div class="chain__tile chain__tile--lg chain__tile--peak"><img src="assets/items/diamond.png" alt="Diamond" width="104" height="104" /></div>
+              <div class="chain__tile chain__tile--lg chain__tile--peak"><img decoding="async" loading="lazy" src="assets/items/diamond.png" alt="Diamond" width="104" height="104" /></div>
               <span class="chain__level">L5</span>
             </li>
           </ol>
@@ -568,42 +647,42 @@
           </p>
           <ul class="chains__more-list">
             <li>
-              <div class="chains__more-chip"><img src="assets/items/carrot.png" alt="Carrot" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/carrot.png" alt="Carrot" /></div>
               <strong>Vegetables</strong>
               <span>12 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/strawberry.png" alt="Strawberry" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/strawberry.png" alt="Strawberry" /></div>
               <strong>Berries</strong>
               <span>5 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/bread.png" alt="Bread" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/bread.png" alt="Bread" /></div>
               <strong>Pastries</strong>
               <span>11 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/almond_milk.png" alt="Milk" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/almond_milk.png" alt="Milk" /></div>
               <strong>Dairy</strong>
               <span>10 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/chocolate_bar.png" alt="Chocolate bar" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/chocolate_bar.png" alt="Chocolate bar" /></div>
               <strong>Chocolate</strong>
               <span>4 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/chicken_leg.png" alt="Chicken leg" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/chicken_leg.png" alt="Chicken leg" /></div>
               <strong>Protein</strong>
               <span>13 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/blender_cup.png" alt="Blender cup" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/blender_cup.png" alt="Blender cup" /></div>
               <strong>Shakes</strong>
               <span>12 levels</span>
             </li>
             <li>
-              <div class="chains__more-chip"><img src="assets/items/gold_coin.png" alt="Coin" /></div>
+              <div class="chains__more-chip"><img height="96" width="96" decoding="async" loading="lazy" src="assets/items/gold_coin.png" alt="Coin" /></div>
               <strong>Coins</strong>
               <span>6 levels</span>
             </li>
@@ -615,10 +694,35 @@
         </aside>
       </section>
 
+      <!--
+        FAQ STUB — uncomment and fill in before launch.
+        Mirror these Q&As in JSON-LD (FAQPage schema) in <head>.
+        Suggested questions (write the answers yourself):
+          - Is FoodyMerge free to play?
+          - When does FoodyMerge release?
+          - Is FoodyMerge safe for kids?
+          - Does FoodyMerge have ads or in-app purchases?
+          - Does FoodyMerge work offline?
+          - What kind of game is FoodyMerge?
+          - Who makes FoodyMerge?
+        AI search engines (ChatGPT/Perplexity/Gemini) cite FAQPage answers
+        verbatim — this is the #1 GEO win once the answers are real.
+
+      <section id="faq" class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title" class="section-title">Common questions</h2>
+        <dl class="faq__list">
+          <div class="faq__item">
+            <dt>Is FoodyMerge free to play?</dt>
+            <dd>[answer]</dd>
+          </div>
+        </dl>
+      </section>
+      -->
+
       <!-- CLOSING -->
       <section class="closing" aria-labelledby="closing-title">
         <div class="closing__plate">
-          <img src="assets/ui/app_icon.png" alt="" aria-hidden="true" width="120" height="120" class="closing__icon" />
+          <img decoding="async" loading="lazy" src="assets/ui/app_icon.png" alt="" aria-hidden="true" width="120" height="120" class="closing__icon" />
           <h2 id="closing-title" class="closing__title">
             Plum Hollow is waiting.
           </h2>
@@ -661,7 +765,7 @@
     <footer class="footer" aria-label="Site footer">
       <div class="footer__inner">
         <div class="footer__lockup">
-          <img src="assets/ui/app_icon.png" alt="" aria-hidden="true" width="40" height="40" />
+          <img decoding="async" loading="lazy" src="assets/ui/app_icon.png" alt="" aria-hidden="true" width="40" height="40" />
           <span class="lockup__text">
             <span class="lockup__foody">Foody</span><span class="lockup__merge">Merge</span>
           </span>

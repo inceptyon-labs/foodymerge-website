@@ -1,3 +1,8 @@
+# If you add analytics later (Plausible, Fathom, GA4, etc.), extend the CSP:
+#   script-src 'self' https://plausible.io
+#   connect-src 'self' https://plausible.io
+# Without that, the browser will silently block the analytics script.
+
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY

@@ -261,6 +261,15 @@ a:hover {
   font-style: italic;
   font-weight: 700;
 }
+.hero__subtitle {
+  max-width: 44ch;
+  font-size: clamp(0.95rem, 1.4vw, 1.0625rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: -0.25rem 0 1.25rem;
+  letter-spacing: 0.005em;
+}
 .hero__peek {
   display: inline-flex;
   align-items: center;
