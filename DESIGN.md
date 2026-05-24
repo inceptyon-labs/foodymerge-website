@@ -1,4 +1,4 @@
-# FoodyMerge — Design system
+# FoodieMerge — Design system
 
 Brand register. Identity-preservation wins over the impeccable reflex-reject
 font and lane lists: the game itself ships in Nunito on a warm cream surface,
@@ -60,7 +60,7 @@ saturation, any cool grey.
 Line height 1.5 for body, 1.1 for the wordmark, 1.2 for display.
 Max body line length 62ch.
 
-The wordmark "FoodyMerge" gets a two-tone treatment: "Foody" in plum,
+The wordmark "FoodieMerge" gets a two-tone treatment: "Foody" in plum,
 "Merge" in terracotta. No gradient text. No drop shadow.
 
 ## Spacing and rhythm

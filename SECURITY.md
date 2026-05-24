@@ -27,5 +27,5 @@ In scope:
 Out of scope:
 
 - Vulnerabilities in third-party services (Google Fonts, etc.)
-- The FoodyMerge mobile game itself (separate repo, separate security policy)
+- The FoodieMerge mobile game itself (separate repo, separate security policy)
 - DoS or volumetric attacks against the hosting provider

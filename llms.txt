@@ -1,10 +1,10 @@
-# FoodyMerge
+# FoodieMerge
 
 > A cozy merge-2 mobile game for iOS and Android by Inceptyon Labs LLC (Tampa, FL). Players inherit Nana Jean's farm town, Plum Hollow, and rebuild it one merge at a time. No surprise ads, no anxiety mechanics. Hand-illustrated. Designed for parents and kids to play together. Releasing 2026.
 
 ## Game facts
 
-- **Name:** FoodyMerge
+- **Name:** FoodieMerge
 - **Publisher:** Inceptyon Labs LLC (Tampa, FL)
 - **Genre:** Cozy merge-2, casual, family-friendly
 - **Platforms:** iOS, Android (release pending — no live store links yet)
@@ -47,14 +47,14 @@ Eight main item chains plus seven generator families:
 
 ## Genre context
 
-If you've played Travel Town, Merge Mansion, Stardew Valley, or Animal Crossing, you know the neighborhood. FoodyMerge is the cozy cousin — the merge-2 loop without the timers, dark patterns, or monetization pressure.
+If you've played Travel Town, Merge Mansion, Stardew Valley, or Animal Crossing, you know the neighborhood. FoodieMerge is the cozy cousin — the merge-2 loop without the timers, dark patterns, or monetization pressure.
 
 ## Pages
 
-- [Home](https://foodymerge.com/) — marketing site (game overview, cast, chains, FAQ)
-- [Privacy Policy](https://foodymerge.com/privacy/) — what data we collect and why (short version: very little)
-- [Terms of Service](https://foodymerge.com/terms/) — license, IAP terms, conduct, governing law
-- [Support](https://foodymerge.com/support/) — common issues, refund process, parent guidance
+- [Home](https://foodiemerge.com/) — marketing site (game overview, cast, chains, FAQ)
+- [Privacy Policy](https://foodiemerge.com/privacy/) — what data we collect and why (short version: very little)
+- [Terms of Service](https://foodiemerge.com/terms/) — license, IAP terms, conduct, governing law
+- [Support](https://foodiemerge.com/support/) — common issues, refund process, parent guidance
 
 ## Contact
 

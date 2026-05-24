@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ui/app_icon.png" alt="FoodyMerge app icon" width="128" height="128">
+  <img src="assets/ui/app_icon.png" alt="FoodieMerge app icon" width="128" height="128">
 </p>
 
 <h1 align="center">foodymerge-website</h1>
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/build-none-9CB380.svg" alt="No build step">
 </p>
 
-Marketing landing page for **FoodyMerge**, the cozy merge-2 mobile game from
+Marketing landing page for **FoodieMerge**, the cozy merge-2 mobile game from
 Inceptyon Labs LLC. Vanilla HTML / CSS / JS, no build step.
 
 ## Run

@@ -1,4 +1,4 @@
-# FoodyMerge — Marketing site
+# FoodieMerge — Marketing site
 
 ## Register
 
@@ -7,7 +7,7 @@ Store. A visitor lands here and leaves either delighted or indifferent.
 
 ## Product
 
-FoodyMerge. A cozy merge-2 mobile game for iPhone and Android. Players
+FoodieMerge. A cozy merge-2 mobile game for iPhone and Android. Players
 inherit Nana Jean's sleepy farm town, Plum Hollow, and rebuild it one merge
 at a time. Tap a generator, drop an apple, drag it onto another apple, watch
 it become an orange. Fulfill an order from the bakery. The market reopens.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://foodymerge.com/sitemap.xml
+Sitemap: https://foodiemerge.com/sitemap.xml

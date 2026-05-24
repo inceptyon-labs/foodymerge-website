@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial marketing site for FoodyMerge.
+- Initial marketing site for FoodieMerge.
 - Hero, cozy pitch, merge-loop demo, Plum Hollow tour, chain ladders, closing plate.
 - Full Nunito + warm-cream design system per `DESIGN.md`.
 - All NPC, building, item, and UI assets shipped alongside the page.
