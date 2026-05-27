@@ -406,6 +406,7 @@ a:hover {
   background: var(--ink);
   color: var(--canvas);
   font-weight: 700;
+  text-decoration: none;
   box-shadow: var(--shadow-soft);
   transition: transform 0.24s var(--ease), box-shadow 0.24s var(--ease),
     background 0.24s var(--ease);
