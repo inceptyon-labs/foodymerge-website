@@ -412,48 +412,9 @@ a:hover {
     background 0.24s var(--ease);
   border: 1.5px solid rgba(255, 248, 231, 0.18);
 }
-.store:hover:not(:disabled) {
+.store:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lift);
-}
-.store:disabled {
-  cursor: not-allowed;
-  opacity: 0.78;
-  position: relative;
-  padding-right: 1.5rem;
-}
-.store:disabled::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent 0 6px,
-    rgba(255, 248, 231, 0.22) 6px 12px
-  );
-  pointer-events: none;
-}
-.store__soon {
-  position: absolute;
-  top: -8px;
-  right: -6px;
-  z-index: 3;
-  font-size: 0.625rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink);
-  background: var(--gold);
-  border: 1.5px solid var(--honey-edge);
-  border-radius: var(--r-pill);
-  padding: 0.18rem 0.55rem;
-  box-shadow: 0 4px 10px -4px rgba(178, 132, 36, 0.55);
-  transform: rotate(4deg);
-  pointer-events: none;
-}
-.store--google .store__soon {
-  transform: rotate(-3deg);
 }
 .store__text {
   display: flex;

@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-7E4E60.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/status-coming%20soon-C8553D.svg" alt="Status: Coming Soon">
+  <img src="https://img.shields.io/badge/status-live-7E9A6C.svg" alt="Status: Live">
   <img src="https://img.shields.io/badge/build-none-9CB380.svg" alt="No build step">
 </p>
 
@@ -49,8 +49,8 @@ ships independently of the game repo.
 
 Top to bottom in `index.html`:
 
-1. **Hero** — wordmark, tagline, "Coming Soon" store buttons, Nana Jean
-   portrait with floating item chips
+1. **Hero** — wordmark, tagline, live App Store + Google Play buttons, Nana
+   Jean portrait with floating item chips
 2. **Cozy pitch** — manifesto headline plus three pillars (no timers,
    generous bounded, parent + child co-buildable)
 3. **How it plays** — four-step merge loop with auto-cycling animations
@@ -94,6 +94,4 @@ See [SECURITY.md](SECURITY.md) for vulnerability reporting.
 
 - No analytics, tracking, or cookie banner
 - No newsletter signup or "join the beta" form (no inbox to receive it)
-- No real App Store / Play Store links (game ships later; buttons are
-  visibly "Coming Soon" pills)
 - No dark mode (the game is sun-warmed cream; dark mode betrays the mood)

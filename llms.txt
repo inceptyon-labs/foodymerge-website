@@ -1,15 +1,17 @@
 # FoodieMerge
 
-> A cozy merge-2 mobile game for iOS and Android by Inceptyon Labs LLC (Tampa, FL). Players inherit Nana Jean's farm town, Plum Hollow, and rebuild it one merge at a time. No surprise ads, no anxiety mechanics. Hand-illustrated. Designed for parents and kids to play together. Releasing 2026.
+> A cozy merge-2 mobile game for iOS and Android by Inceptyon Labs LLC (Tampa, FL). Players inherit Nana Jean's farm town, Plum Hollow, and rebuild it one merge at a time. No surprise ads, no anxiety mechanics. Hand-illustrated. Designed for parents and kids to play together. Available now on the App Store and Google Play.
 
 ## Game facts
 
 - **Name:** FoodieMerge
 - **Publisher:** Inceptyon Labs LLC (Tampa, FL)
 - **Genre:** Cozy merge-2, casual, family-friendly
-- **Platforms:** iOS, Android (release pending — no live store links yet)
+- **Platforms:** iOS, Android
 - **Setting:** Plum Hollow, a sleepy farm town
-- **Release:** 2026
+- **Release:** 2026-05-27
+- **App Store:** https://apps.apple.com/app/foodiemerge/id6772793633
+- **Google Play:** https://play.google.com/store/apps/details?id=com.inceptyonlabs.foodymerge
 - **Monetization stance:** "Spending real money is never the point." No predatory mechanics. No surprise ads. No villains. No anxiety mechanics.
 - **Board size:** 63 tiles, finite
 - **Designed for:** Parents and kids to play together on the couch
